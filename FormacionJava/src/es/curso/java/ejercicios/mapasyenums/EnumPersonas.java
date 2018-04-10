@@ -13,6 +13,7 @@ public enum EnumPersonas {
 	private String apellidos;
 	private String dni;
 	private Persona persona;
+	
 	private EnumPersonas(String nombre, String apellidos, String dni) {
 		this.nombre = nombre;
 		this.apellidos = apellidos;

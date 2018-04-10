@@ -2,6 +2,7 @@ package es.curso.java.threads.supermercado;
 
 public class Supermercado {
 	public static void main(String[] args) {
+		System.out.println("Empieza hilo Principal");
 		ClienteSupermercado cliente1 = new ClienteSupermercado("Nombre1","Ape1","123123M");
 		double [] precios = {123.0,23.78,67.0};
 		cliente1.setPreciosProductos(precios);

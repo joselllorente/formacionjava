@@ -55,7 +55,8 @@ public class CajeraSupermercado extends Persona implements Runnable {
 		double [] precios = this.cliente.getPreciosProductos();
 		long initialTime = System.currentTimeMillis();
 
-		System.out.println("La cajera " + getNombre() + " COMIENZA A PROCESAR LA COMPRA DEL CLIENTE " 
+		System.out.println("La cajera " + getNombre() +
+				" COMIENZA A PROCESAR LA COMPRA DEL CLIENTE " 
 				+ this.cliente.getNombre());
 		
 		for (double precio : precios) {
@@ -63,7 +64,7 @@ public class CajeraSupermercado extends Persona implements Runnable {
 			System.out.println("\tLa cajera " + getNombre() + " PROCESA PRODUCTO DE PRECIO " 
 					+ precio);
 			try {
-				System.out.println(parsimonia);
+				System.out.println("parsimonia:" + parsimonia);
 				Thread.sleep(parsimonia);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
@@ -75,7 +76,7 @@ public class CajeraSupermercado extends Persona implements Runnable {
 				+ (System.currentTimeMillis() - initialTime) / 1000 
 				+ "seg");
 		
-		System.out.println("El cliente "+this.cliente.getNombre()+ " tiene una factura de "+total+ " €");
+		System.out.println("El cliente "+this.cliente.getNombre()+ " tiene una factura de "+total+ " ï¿½");
 	}
 	
 	

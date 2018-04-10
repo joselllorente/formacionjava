@@ -11,6 +11,9 @@ public class MainAnimal {
 		Elefante elefante2 = new Elefante ();
 		elefante2.setNombre("Elefante2");
 		
+		
+		//Animal a = new Animal();
+		
 		System.out.println(elefante1.getNombre());
 		System.out.println(elefante2.getNombre());
 		

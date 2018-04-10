@@ -29,4 +29,8 @@ public class Tambor extends Instrumento {
 	public void aporrear (){
 		System.out.println("Aporreando el tambor " + getNombre());
 	}
+	
+	public void limpiar () {
+		System.out.println("Limpiando TAmbor");
+	}
 }

@@ -1,12 +1,13 @@
 package es.curso.java.ejercicios.herencia.orquesta;
 
-public class Instrumento {
+public abstract class Instrumento {
 	private String nombre;
 	private String tipo;
 	
 	public Instrumento() {
 		super();
 	}
+	
 	public Instrumento(String nombre, String tipo) {
 		super();
 		this.nombre = nombre;
@@ -33,10 +34,12 @@ public class Instrumento {
 	public void afinar (){
 		System.out.println("Afinando el instrumento "+this.nombre);
 	}
+	
 	@Override
 	public String toString() {
 		return "Instrumento [nombre=" + nombre + ", tipo=" + tipo + "]";
 	}
 	
+	public abstract void limpiar ();
 	
 }

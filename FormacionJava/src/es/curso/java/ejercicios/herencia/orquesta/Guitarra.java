@@ -49,4 +49,11 @@ public class Guitarra extends Instrumento implements Interface1{
 		// TODO Auto-generated method stub
 		
 	}
+
+	@Override
+	public void limpiar() {
+		System.out.println("Limpiando Guitarra");
+		
+	}
+
 }

@@ -35,8 +35,14 @@ public class Hospital {
 		}
 		
 		
-		
+		ficharEmpleado(d1);
 
+	}
+	
+	private static void ficharEmpleado (EmpleadoHospital eh){
+		
+			eh.fichar();
+			
 	}
 	
 	private static void ficharEmpleados (List<EmpleadoHospital> eh){

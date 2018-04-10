@@ -3,22 +3,24 @@ package es.curso.java.ejercicios.herencia.orquesta;
 public class Flauta extends Instrumento {
 	private String modelo;
 
-	public Flauta() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
+//	public Flauta() {
+//		super();
+//		// TODO Auto-generated constructor stub
+//	}
+//
 	public Flauta(String nombre, String tipo) {
 		super(nombre, tipo);
 		// TODO Auto-generated constructor stub
 	}
 
-	public Flauta(String modelo) {
-		super();
+	public Flauta(String nombre, String tipo, String modelo) {
+		super(nombre, tipo);
 		this.modelo = modelo;
 	}
 
 	public String getModelo() {
+		
+		setNombre("");
 		return modelo;
 	}
 
@@ -31,6 +33,15 @@ public class Flauta extends Instrumento {
 		super.tocar();
 		System.out.println("Soplando");
 	}
+
+	@Override
+	public void limpiar() {
+		// TODO Auto-generated method stub
+		
+	}
 	
+	public void metodo1() {
+		
+	}
 	
 }

@@ -32,14 +32,14 @@ public class ColeccionesAdd {
             
             System.out.println("Tiempo invertido en insertar una persona en listaarray (en nanosegundos):");
             antes = System.nanoTime();
-            listaarray.add(0,new Persona(10001,"Prueba",10001)); // Inserción en posicion 0 de una persona
+            listaarray.add(0,new Persona(10001,"Prueba",10001)); // Inserciï¿½n en posicion 0 de una persona
             System.out.println(System.nanoTime()- antes); 
             
             System.out.println("============================");
             
             System.out.println("Tiempo invertido en insertar una persona en listalinked (en nanosegundos):");
             antes = System.nanoTime();
-            listalinked.add(0,new Persona(10001,"Prueba",10001));  // Inserción en posicion 0 de una persona
+            listalinked.add(0,new Persona(10001,"Prueba",10001));  // Inserciï¿½n en posicion 0 de una persona
             System.out.println(System.nanoTime()- antes);
       } 
 }

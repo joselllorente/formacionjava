@@ -17,7 +17,7 @@ public class Kinepolis {
 
 	public static void main(String[] args) {
 		SalaDeCine sala1 = new SalaDeCine("sala1", 2, "Pelicula1");
-		SalaDeCine sala2 = new SalaDeCine("sala2", 3, "Pelicula2");
+		SalaDeCine sala2 = new SalaDeCine("sala2", 1, "Pelicula2");
 		SalaDeCine sala3 = new SalaDeCine("sala3", 2, "Pelicula3");
 		
 		List<Persona> personasSala1 = new ArrayList<Persona>();
@@ -27,7 +27,7 @@ public class Kinepolis {
 		List<Persona> personasSala3 = new ArrayList<Persona>();
 		
 		
-		Map <SalaDeCine, List<Persona>> cine 
+		Map <SalaDeCine, List<Persona> > cine 
 					= new HashMap<SalaDeCine, List<Persona>>();
 		
 		
