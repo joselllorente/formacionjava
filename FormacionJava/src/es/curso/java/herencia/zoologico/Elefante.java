@@ -1,6 +1,6 @@
 package es.curso.java.herencia.zoologico;
 
-public class Elefante extends Animal{
+public final class Elefante extends Animal{
 	private int numCuernos;
 
 	public Elefante() {
@@ -33,11 +33,20 @@ public class Elefante extends Animal{
 
 	@Override
 	public String toString() {
-		return "Elefante [numCuernos=" + numCuernos + "]";
+		return super.toString() + "Elefante [numCuernos=" + numCuernos + "]";
 	}
 	
+	//barritar
 	public void moverTrompa(){
 		System.out.println("El elefante "+getNombre() + " esta moviendo la trompa");
 	}
+
+	@Override
+	public void beber() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
 	
 }

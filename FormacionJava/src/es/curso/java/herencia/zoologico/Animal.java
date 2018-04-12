@@ -1,6 +1,6 @@
 package es.curso.java.herencia.zoologico;
 
-public class Animal {
+public abstract class Animal {
 	private String nombre;
 	private int edad;
 	private double peso;
@@ -40,6 +40,8 @@ public class Animal {
 	public void setTipo(String tipo) {
 		this.tipo = tipo;
 	}
+	
+	
 	@Override
 	public String toString() {
 		return "Animal [nombre=" + nombre + ", edad=" + edad + ", peso=" + peso
@@ -48,10 +50,24 @@ public class Animal {
 	
 	public void comer (){
 		System.out.println("El animal esta comiendo");
+		metodo1();
 	}
 	
 	public void dormir (){
 		System.out.println("El animal esta durmiendo");
 	}
+	
+	private void metodo1() {
+		
+	}
+	
+	public abstract void beber ();
+	
+	
+	
+	
+	
+	
+	
 	
 }

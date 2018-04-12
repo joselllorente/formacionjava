@@ -7,9 +7,16 @@ public class DeclaracionMetodos {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] werwer) {
+	public static void main(String[] args) {
 		
-		metodo1();
+		//int num= metodo1("7");
+		
+//		AulaMain.metodoAula();
+		
+		DeclaracionMetodos dm = new DeclaracionMetodos();
+		int num2 = dm.metodo1("0");
+		
+		dm.main(args);
 		
 		String valor = metodo2();
 		System.out.println(valor);
@@ -23,8 +30,16 @@ public class DeclaracionMetodos {
 		NuevaClase.metodoC(array);
 	}
 	
-	public static void metodo1 (){
+	public static void metodo1 (int b){
 		System.out.println("Llamando metodo1");
+	}
+	
+	public int metodo1 (String a){
+		System.out.println("Llamando metodo1" +a );
+		
+		metodo1(9);
+		
+		return Integer.parseInt(a);
 	}
 	
 	static String metodo2 (){

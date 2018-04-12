@@ -15,10 +15,10 @@ public class PruebaColeccionesSet {
 		
 		HashSet<Aula> aulas = new HashSet<Aula>();
 		
-		Aula aula1 = new Aula (5, "Colegio");
-		
-		System.out.println(aulas.add(aula1));
-		System.out.println(aulas.add(aula1));
+//		Aula aula1 = new Aula (5, "Colegio");
+//		
+//		System.out.println(aulas.add(aula1));
+//		System.out.println(aulas.add(aula1));
 
 	}
 

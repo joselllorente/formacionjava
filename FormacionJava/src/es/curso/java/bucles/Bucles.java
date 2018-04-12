@@ -20,8 +20,8 @@ public class Bucles {
 		}
 		
 		do{
-			
-		}while(true);
+			System.out.println("Ejecuta");
+		}while(i<=10);
 
 	}
 

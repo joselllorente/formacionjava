@@ -1,42 +1,35 @@
 package es.curso.java.metodos;
 
 public class Aula {
-	//Varaibles de instancia
+	// Varaibles de instancia
 	private String nombreAula;
 	private int numAlumnos;
-	private String colegio;
 	private int planta;
+	private Colegio colegio;
 	
-	public Aula(){
-		
+	// public Aula() {
+	// super();
+	// // TODO Auto-generated constructor stub
+	// }
+
+	public Aula(String nombreAula) {
+		super();
+		this.nombreAula = nombreAula;
 	}
-	
-	Aula(String nombreAula, int numAlumnos, 
-			String colegio, int planta){
+
+	public Aula(String nombreAula, int numAlumnos) {
+		super();
 		this.nombreAula = nombreAula;
 		this.numAlumnos = numAlumnos;
-		this.colegio = colegio;
-		this.planta = planta;
 	}
 
-	public Aula(int numAlumnos, String colegio) {
-		super();
-		this.numAlumnos = numAlumnos;
-		this.colegio = colegio;
+	public String getNombreAula() {
+		return nombreAula;
 	}
 
-	public String dameColegioAula(){
-		String nombre;
-		System.out.println(colegio);
-		return colegio;
-	}
-	
-	public String getNombreAula(){
-		return this.nombreAula;
-	}
-	public void setNombreAula(String nombre){
-		this.nombreAula=nombre;
-	}
+	 public void setNombreAula(String nombreAula) {
+	 this.nombreAula = nombreAula;
+	 }
 
 	public int getNumAlumnos() {
 		return numAlumnos;
@@ -46,13 +39,6 @@ public class Aula {
 		this.numAlumnos = numAlumnos;
 	}
 
-	public String getColegio() {
-		return colegio;
-	}
-
-	private void setColegio(String colegio) {
-		this.colegio = colegio;
-	}
 
 	public int getPlanta() {
 		return planta;
@@ -61,5 +47,14 @@ public class Aula {
 	public void setPlanta(int planta) {
 		this.planta = planta;
 	}
+
+	public Colegio getColegio() {
+		return colegio;
+	}
+
+	public void setColegio(Colegio colegio) {
+		this.colegio = colegio;
+	}
+
 	
 }
